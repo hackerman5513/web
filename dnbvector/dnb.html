@@ -1,0 +1,60 @@
+<div id="logo_eq">
+  <div id = "logo">DnB<span>Vector</span>.LT</div>
+  <div id="bars"></div>
+</div>
+
+
+<style>
+
+  div#logo{
+  font-size:40px;
+  color:red;
+  display:block;
+  border:1px solid red;
+}
+
+div#logo span{
+  color:violet;
+}
+
+div#bars{
+
+ height:25px;
+ margin-top:2px;
+}
+
+#logo_eq{
+  border:2px solid red;
+  padding:2px;
+}
+
+body{
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+ 
+}
+
+html,body{
+ height: 100%;
+  margin: 0;
+}
+</style>
+
+<script>
+canvas = document.createElement('canvas');
+ctx = canvas.getContext('2d');
+bar_div = document.querySelector('div#logo_eq #bars');
+canvas.width = bar_div.offsetWidth;
+canvas.height = bar_div.offsetHeight;
+bar_div.appendChild(canvas);
+
+
+draw_bars = ()=>{
+ctx.fillStyle = 'rgba(255,0,255,0.3)';
+for(let i = 0; i < canvas.width; i+=canvas.width/10)
+ctx.fillRect(i+1,canvas.height,canvas.width/10-2,-canvas.height+1);
+}
+
+draw_bars();
+</script>
