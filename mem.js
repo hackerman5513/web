@@ -1,8 +1,4 @@
-
-document.body.innerHTML += `<div id="wrap">
-  ${'<div></div>'.repeat(16)}
-</div>
-
+document.body.innerHTML += `<div id="wrap">${'<div></div>'.repeat(16)}</div>
 <style>
  #wrap {
   display: flex;
@@ -86,7 +82,6 @@ next = (x, y) => {
 }
 
 
-
 tick = () => {
   for (let card of GRID)
     if (--card.time == 0)
@@ -113,6 +108,3 @@ document.querySelector('#wrap').onclick = (e) => {
 }
 
 window.setInterval(() => { tick(); render(); }, 50);
-
-
-
