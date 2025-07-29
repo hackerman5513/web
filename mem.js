@@ -81,7 +81,6 @@ next = (x, y) => {
   }
 }
 
-
 tick = () => {
   for (let card of GRID)
     if (--card.time == 0)
