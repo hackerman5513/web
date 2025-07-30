@@ -14,7 +14,6 @@ document.body.innerHTML += `<div id="wrap">${'<div></div>'.repeat(16)}</div>
   height: 100px;
   box-sizing: border-box;
   cursor: pointer;
-
 }
 
 #wrap div:hover {
