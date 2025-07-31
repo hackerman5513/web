@@ -1,0 +1,15 @@
+<input type="text" placeholder = "Pavadinimas">
+<input type="text" placeholder = "Aprasymas">
+<label for="eventPhoto">Foto:</label>
+<input type="file" id="eventPhoto"  accept="image/*">
+<label >Data:</label>
+<input type = "date">
+<input type = "location">
+<input type = "button" value = "➔" >
+
+<style>
+  input{
+    display:block;
+    margin-bottom:5px;
+  }
+</style>
