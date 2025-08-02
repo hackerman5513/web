@@ -4,7 +4,7 @@
 <input type="file" id="eventPhoto"  accept="image/*">
 <label >Data:</label>
 <input type = "date">
-<input type = "location">
+<input type = "text" placeholder = "coords">
 <input type = "button" value = "➔" >
 
 <style>
